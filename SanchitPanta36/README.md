@@ -1,4 +1,4 @@
-# Lab Submission Guide
+# Lab Submission Guide for Everyone - BESE2023
 
 This guide explains how to submit your lab PDF to the GitHub repository using either:
 
@@ -32,13 +32,13 @@ GitHub does not allow empty folders, so create a folder by creating a file insid
 2. In the filename box, enter:
 
 ```
-YourNameRoll/README.md
+YourNameRoll
 ```
 
 Example:
 
 ```
-JohnDoe_45/README.md
+YourNameRoll/
 ```
 
 3. Add the following content:
@@ -68,7 +68,6 @@ Your repository structure should look like:
 ```
 RepositoryName/
 └── YourNameRoll/
-    ├── README.md
     └── Lab1_Agile.pdf
 ```
 
@@ -122,10 +121,8 @@ Create a folder using your name and roll number.
 mkdir YourNameRoll
 ```
 
-Git does not track empty folders, so create a README file.
-
 ```bash
-echo "My Lab Work Folder" > YourNameRoll/README.md
+echo "My Lab Work Folder" > YourNameRoll
 ```
 
 ---
@@ -144,8 +141,6 @@ Your directory should look like:
 
 ```
 RepositoryName/
-└── YourNameRoll/
-    ├── README.md
     └── Lab1_Agile.pdf
 ```
 
@@ -162,7 +157,7 @@ git status
 You should see something similar to:
 
 ```
-new file: YourNameRoll/README.md
+new file: YourNameRoll
 new file: YourNameRoll/Lab1_Agile.pdf
 ```
 
@@ -224,15 +219,13 @@ Your repository should look similar to:
 RepositoryName/
 │
 ├── Student1_01/
-│   ├── README.md
-│   └── Lab1_Agile.pdf
+│ │   └── Lab1_Agile.pdf
 │
 ├── Student2_02/
 │   ├── README.md
 │   └── Lab1_Agile.pdf
 │
 └── Student3_03/
-    ├── README.md
     └── Lab1_Agile.pdf
 ```
 
@@ -243,7 +236,6 @@ RepositoryName/
 - Fork the repository before making changes.
 - Always work in **your fork**, not the original repository.
 - GitHub does not allow empty folders.
-- Every folder should contain a `README.md` file.
 - Keep your PDF inside your own folder.
 - Verify changes with `git status` before committing.
 - Push your changes before creating a Pull Request.
@@ -257,7 +249,7 @@ RepositoryName/
 git clone <repository-url>
 cd RepositoryName
 mkdir YourNameRoll
-echo "My Lab Work Folder" > YourNameRoll/README.md
+echo "My Lab Work Folder" > YourNameRoll
 cp ~/Downloads/Lab1_Agile.pdf YourNameRoll/
 git status
 git add .
@@ -272,7 +264,6 @@ git push origin main
 - ✅ Forked the repository
 - ✅ Cloned your fork (Terminal method only)
 - ✅ Created your folder
-- ✅ Added `README.md`
 - ✅ Uploaded the lab PDF
 - ✅ Committed the changes
 - ✅ Pushed to GitHub
